@@ -12,7 +12,7 @@ public class Pincode {
 		System.out.println("Enter the 6 digit PIN code: ");
 		String pin = sc.nextLine();
 		
-		boolean isPin = Pattern.matches("[0-9]{6}+^![A-Z~!@#$%^&*()_.+=-]$", pin);
+		boolean isPin = Pattern.matches("[0-9]{3}\s+[0-9]{3}", pin);
 		
 		if(isPin) {
 			System.out.println("Valid Pincode");
